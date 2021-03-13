@@ -1,0 +1,386 @@
+.sidebar {
+    width: 300px;
+    background: #f2f3f7;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+
+.profile-image {
+    padding: 3rem 0;
+    img {
+        height: 150px;
+        width:150px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
+.title {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.designation {
+    font-size: 12px;
+    margin-bottom: 2em;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+    padding-bottom: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.nav-item {
+    margin-bottom: 12px;
+    a {
+        text-decoration: none;
+        padding: 8px 0;
+        color: rgba(0,0,0,.7);
+    }
+}
+
+.nav-item a:hover {
+    border-bottom: 1px solid #2c98f0;
+}
+
+.active {
+    color: #2c98f0 !important;
+    border-bottom: 1px solid #2c98f0;
+}
+
+
+
+.main {
+    margin-left: 300px;
+    overflow-x: hidden;
+}
+
+// About
+
+#about {
+    padding:5.4375rem 2.5rem;
+    max-width: 2500px;
+}
+
+.about-title {
+    font-size: 10px;
+    margin-bottom: 15px;
+    letter-spacing: 5px;
+    font-family: 'Quicksand', sans-serif;
+    color: #999;
+    font-weight: 500;
+}
+
+.who-am-I {
+    font-size: 1.125rem;
+    margin-bottom: 4em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.8;
+}
+
+.description {
+    margin-bottom: 1.5em;
+    font-family: 'Quicksand',sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.8em;
+    color: rgba(0,0,0,.7);
+}
+
+.grid {
+    padding: 1.4063rem;
+    box-shadow: 0 0 56px -8px rgb(0 0 0 / 17%);
+    i {
+        margin-bottom: 1.25rem;
+
+    }
+  
+    h4 {
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: 'Quicksand',sans-serif;
+        margin-bottom: 1.875rem;
+    }
+}
+
+.grids {
+    padding-top: 0.9375rem;
+    max-width: 58.25rem;
+    margin-bottom: 5rem;
+}
+
+.design-grid {
+    border-bottom: 2px solid #2c98f0;
+    i {
+        color:#2c98f0;
+    }
+}
+
+.web-grid {
+    border-bottom: 2px solid #ec5453;
+    i {
+        color:#ec5453;
+    }
+}
+
+.software-grid {
+    border-bottom: 2px solid #f9bf3f;
+    i {
+        color:#f9bf3f;
+    }
+}
+
+.application-grid {
+    border-bottom: 2px solid #a84cb8;
+    i {
+        color:#a84cb8;
+    }
+}
+
+.hire-me {
+    background: #f9bf3f;
+    max-width: 58.25rem;
+    padding: 1.875rem;
+    h5 {
+        font-weight: 400;
+        margin: 0 0 30px;
+        font-size: 1.875rem;
+    }
+}
+
+.hire-me-btn {
+    padding: 2px 10px;
+    border: 1px solid #000;
+    background: transparent;
+    letter-spacing: 1px;
+    font-family: 'Quicksand',sans-serif;
+}
+
+// Skills
+
+#skills {
+    padding:5.4375rem 2.5rem;
+    max-width: 2500px;
+}
+
+.progress-bars {
+    max-width: 58.25rem;
+}
+
+.progress {
+    height: 0.375rem;
+}
+
+.photoshop-progress {
+    background: #2c98f0;
+}
+
+.jquery-progress {
+    background: #ec5453;
+}
+
+.html-progress {
+    background: #f9bf3f;
+}
+
+.css-progress {
+    background: #a84cb8;
+}
+
+.wordpress-progress {
+    background: #2fa499;
+}
+
+.seo-progress {
+    background: #4054b2;
+}
+
+.progress-bars {
+    h3 {
+        font-size: 1rem;
+        font-family: 'Quicksand', sans-serif;
+        margin-bottom: 10px;
+        font-weight: 400;
+    }
+}
+
+.progress-wrap {
+    margin-bottom: 1.25rem;
+}
+
+// Experience
+
+.timeline-line::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: #f2f3f7;
+    height: 180px;
+    margin-left: 20px;
+}
+
+.pencil {
+    position: relative;
+    left: 2px;
+    background: #2c98f0;
+    color: #fff;
+    padding: .5rem .7rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #f2f3f7;
+}
+
+.timeline-description {
+    padding: 1.4063rem;
+    background: #f2f3f7;
+    position: relative;
+    top: -32px;
+    margin-left: 60px;
+    margin-bottom: -0.8125rem;
+    h2 {
+        font-size: 20px;
+    font-family: "Quicksand", Arial, sans-serif;
+    font-weight: 500;
+    margin-bottom: 1.875rem;
+    span {
+        font-size: 16px;
+        opacity: .4;
+    }
+
+    }
+    p {
+        font-family: "Quicksand", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgba(0, 0, 0, 0.7);
+    }
+}
+
+.timeline-description::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 9px 9px 0;
+    border-color: transparent #f2f3f7 transparent transparent;
+    left: 0;
+    top: 10px;
+    margin-left: -9px;
+}
+
+#experience {
+    padding:5.4375rem 2.5rem;
+    max-width: 2500px;
+}
+
+.timeline-bars {
+    max-width: 58.25rem;
+}
+
+.pencil-red {
+    background: #ec5453;
+}
+
+.pencil-yellow {
+    background: #f9bf3f;
+}
+
+.pencil-purple {
+    background: #a84cb8;
+}
+
+.pencil-green {
+    background: #2fa499;
+}
+
+.timeline-end {
+    position: relative;
+    left: 12px;
+    color: #fff;
+    padding: 0 .65rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #f2f3f7;
+}
+
+#contact {
+    padding:5.4375rem 2.5rem;
+    max-width:1200px;
+}
+
+.card {
+    padding: 2rem;
+    background: #f2f3f7;
+    border: none;
+    box-shadow: 0 0 20px -8px rgb(0 0 0 / 17%);
+}
+
+.fa-map {
+    color: #ec5453;
+}
+
+.fa-phone {
+    color: #f9bf3f;
+}
+
+.fa-envelope {
+    color: #a84cb8;
+}
+
+// Homepage
+
+.homepage-title {
+    font-size: 3.75rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 1.25rem;
+    padding: 0;
+}
+
+.btn-cv-download {
+    color:#333;
+    border: 1px solid #000;
+    background: transparent;
+    font-size: 0.75rem;
+    letter-spacing: 0.125rem;
+    font-weight: 400;
+    padding: 0.625rem 0.9375rem;
+    text-decoration: none;
+}
+
+.homepage-description {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    margin-bottom: 1.875rem;
+    padding: 0;
+    font-weight: 300;
+    font-family: "Quicksand", sans-serif;
+}
+
+.home-main {
+    padding: 3.25rem;
+}
+
+
+.image {
+    height: 6.25rem;
+    overflow: hidden;
+}
+
+#work {
+    padding: 5.4375rem 2.5rem;
+    max-width: 1000px;
+}
