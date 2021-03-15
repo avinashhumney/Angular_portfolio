@@ -1,29 +1,29 @@
 <div class="sidebar">
     <div>
         <div class="profile-image text-center">
-            <img src="../../../assets/images/Avinash_profile.jpg" alt="Avinash Humney">
+            <img src="../../../assets/images/Avinash_profile.jpeg" alt="Avinash Humney">
         </div>
         <h1 class="text-center title">Avinash Humney</h1>
-        <h2 class="text-uppercase designation text-center">Frontend Developer in India</h2>
+        <h2 class="text-uppercase designation text-center">Frontend Developer</h2>
         <div class="text-center">
             <ul class="nav-links">
                 <li class="nav-item">
-                    <a href="#home" class="active">Home</a>
+                    <a href="#home" [ngClass]="{'active': getActiveNav('/#home')}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#about">About</a>
+                    <a href="#about" [ngClass]="{'active': getActiveNav('/#about')}">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#skills">Skills</a>
+                    <a href="#skills" [ngClass]="{'active': getActiveNav('/#skills')}">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#experience">Experience</a>
+                    <a href="#experience" [ngClass]="{'active': getActiveNav('/#experience')}">Experience</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#work">Work</a>
+                    <a href="#work" [ngClass]="{'active': getActiveNav('/#work')}">Work</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact">Contact</a>
+                    <a href="#contact" [ngClass]="{'active': getActiveNav('/#contact')}">Contact</a>
                 </li>
             </ul>
         </div>
@@ -32,7 +32,7 @@
 
 <div class="main">
 
-    <section id="home" style="height: 100vh;">
+    <section id="home" style="min-height: 100vh;">
         <div class="row align-items-center" style="height: 100%;">
             <div class="col-12 col-md-6 col-lg-6">
                 <div class="home-main">
@@ -51,17 +51,16 @@
             </div>
             <div class="col-12 col-md-6 col-lg-6">
                 <div class="mt-5">
-                    <img class="align-middle" src="../../../assets/images/undraw_building_websites_i78t.svg"
+                    <img class="align-middle img-fluid" src="../../../assets/images/undraw_building_websites_i78t.svg"
                         alt="Homepage banner" height="500px" width="550px">
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" style="height: 100vh;">
+    <section id="about" class="d-flex justify-content-center" style="min-height: 100vh;">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-6">
-                <h2 class="text-uppercase about-title">About us</h2>
                 <h3 class="text-uppercase who-am-I">Who am I?</h3>
                 <p class="description">
                     <span>Hi I'm Avinash Humney</span> On her way she met a copy. The copy warned the Little Blind Text,
@@ -80,46 +79,38 @@
 
             <div class="row">
                 <div class="col-12 col-md-3 col-lg-3">
-                    <div class="grid design-grid">
+                    <div class="grid design-grid text-center">
                         <span><i class="far fa-lightbulb"></i></span>
                         <h4>Graphic Design</h4>
                     </div>
                 </div>
                 <div class="col-12 col-md-3 col-lg-3">
-                    <div class="grid web-grid">
+                    <div class="grid web-grid text-center">
                         <span><i class="fas fa-globe"></i></span>
                         <h4>Web Design</h4>
                     </div>
                 </div>
                 <div class="col-12 col-md-3 col-lg-3">
-                    <div class="grid software-grid">
+                    <div class="grid software-grid text-center">
                         <span><i class="fas fa-database"></i></span>
                         <h4>Software</h4>
                     </div>
                 </div>
                 <div class="col-12 col-md-3 col-lg-3">
-                    <div class="grid application-grid">
+                    <div class="grid application-grid text-center">
                         <span><i class="fas fa-mobile-alt"></i></span>
                         <h4>Application</h4>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="hire-me">
-            <h5>
-                I am happy to know you
-                that 300+ projects done sucessfully!
-            </h5>
-            <button class="text-uppercase hire-me-btn">Hire me</button>
-        </div>
     </section>
 
-    <section id="skills" style="height: 100vh;">
+    <section id="skills" style="min-height: 100vh;">
         <div class="mt-5">
 
             <div class="row align-items-center" style="height: 100%;">
                 <div class="col-12 col-md-6 col-lg-6">
-                    <h2 class="text-uppercase about-title">My speciality</h2>
                     <h3 class="text-uppercase who-am-I">My skills</h3>
                     <p class="description">
                         The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild
@@ -136,84 +127,226 @@
             <div class="progress-bars">
 
                 <div class="row">
-                    <div class="col-12 col-md-6 col-lg-6">
+                    <div class="col-12 col-md-12 col-lg-12">
                         <div class="progress-wrap">
-                            <div>
-                                <h3>Photoshop</h3>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar photoshop-progress" role="progressbar" style="width: 75%"
-                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6">
-                        <div class="progress-wrap">
-                            <div>
-                                <h3>jQuery</h3>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar jquery-progress" role="progressbar" style="width: 60%"
-                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-6">
-                        <div class="progress-wrap">
-                            <div>
-                                <h3>HTML5</h3>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar html-progress" role="progressbar" style="width: 85%"
-                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6">
-                        <div class="progress-wrap">
-                            <div>
-                                <h3>CSS3</h3>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar css-progress" role="progressbar" style="width: 90%"
-                                    aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="row">
+                                <div class="col-12 col-md-2">
+                                    <div>
+                                        <h3>Photoshop</h3>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-10 m-auto">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <h5 class="beginner">Beginner</h5>
+                                        </div>
+                                        <div class="col-4">
+                                            <h5 class="intermediate text-center">Intermediate</h5>
+                                            <div class="line-wrap">
+                                                <div class="intermediate-line mx-auto"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <h5 class="expert text-end">Expert</h5>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar photoshop-progress" role="progressbar"
+                                            style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-md-6 col-lg-6">
+                    <div class="col-12 col-md-12 col-lg-12">
                         <div class="progress-wrap">
-                            <div>
-                                <h3>Wordpress</h3>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar wordpress-progress" role="progressbar" style="width: 70%"
-                                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6">
-                        <div class="progress-wrap">
-                            <div>
-                                <h3>SEO</h3>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar seo-progress" role="progressbar" style="width: 80%"
-                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="row">
+                                <div class="col-12 col-md-2">
+                                    <div>
+                                        <h3>JQuery</h3>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-10 m-auto">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <h5 class="beginner">Beginner</h5>
+                                        </div>
+                                        <div class="col-4">
+                                            <h5 class="intermediate text-center">Intermediate</h5>
+                                            <div class="line-wrap">
+                                                <div class="intermediate-line mx-auto"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <h5 class="expert text-end">Expert</h5>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar jquery-progress" role="progressbar" style="width: 120%"
+                                            aria-valuenow="120" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12">
+                        <div class="progress-wrap">
+                            <div class="row">
+                                <div class="col-12 col-md-2">
+                                    <div>
+                                        <h3>JavaScript</h3>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-10 m-auto">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <h5 class="beginner">Beginner</h5>
+                                        </div>
+                                        <div class="col-4">
+                                            <h5 class="intermediate text-center">Intermediate</h5>
+                                            <div class="line-wrap">
+                                                <div class="intermediate-line mx-auto"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <h5 class="expert text-end">Expert</h5>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar css-progress" role="progressbar" style="width: 90%"
+                                            aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12">
+                        <div class="progress-wrap">
+                            <div class="row">
+                                <div class="col-12 col-md-2">
+                                    <div>
+                                        <h3>CSS3</h3>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-10 m-auto">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <h5 class="beginner">Beginner</h5>
+                                        </div>
+                                        <div class="col-4">
+                                            <h5 class="intermediate text-center">Intermediate</h5>
+                                            <div class="line-wrap">
+                                                <div class="intermediate-line mx-auto"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <h5 class="expert text-end">Expert</h5>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar html-progress" role="progressbar" style="width: 70%"
+                                            aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12">
+                        <div class="progress-wrap">
+                            <div class="row">
+                                <div class="col-12 col-md-2">
+                                    <div>
+                                        <h3>Angular</h3>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-10 m-auto">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <h5 class="beginner">Beginner</h5>
+                                        </div>
+                                        <div class="col-4">
+                                            <h5 class="intermediate text-center">Intermediate</h5>
+                                            <div class="line-wrap">
+                                                <div class="intermediate-line mx-auto"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <h5 class="expert text-end">Expert</h5>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar wordpress-progress" role="progressbar"
+                                            style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12">
+                        <div class="progress-wrap">
+                            <div class="row">
+                                <div class="col-12 col-md-2">
+                                    <div>
+                                        <h3>Bootstrap</h3>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-10 m-auto">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <h5 class="beginner">Beginner</h5>
+                                        </div>
+                                        <div class="col-4">
+                                            <h5 class="intermediate text-center">Intermediate</h5>
+                                            <div class="line-wrap">
+                                                <div class="intermediate-line mx-auto"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <h5 class="expert text-end">Expert</h5>
+                                        </div>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar seo-progress" role="progressbar" style="width: 80%"
+                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
     <section id="experience" style="min-height: 100vh;">
-        <h2 class="text-uppercase about-title">Experience</h2>
         <h3 class="text-uppercase who-am-I">Work Experience</h3>
+        <div class="company">
+            <div class="row">
+                <div class="col-12 col-mg-1 col-lg-1 text-md-center">
+                    <img class="company-logo" src="../../../assets/images/experience/Think201.jpg" height="50px"
+                        width="50px" alt="Think201">
+                    <h6 class="mt-2 company-name">Think201</h6>
+                </div>
+                <div class="col-12 col-mg-11 col-lg-11 my-auto">
+                    <h5 class="designation">Frontend Developer</h5>
+                    <h6 class="time-period">October 2020 - Present</h6>
+                </div>
+            </div>
+        </div>
         <div class="timeline-bars">
             <div class="timeline-line">
             </div>
@@ -221,11 +354,14 @@
                 <i class="fas fa-pencil-alt"></i>
             </span>
             <div class="timeline-description">
-                <h2>Full Stack Developer <span>2017-2018</span></h2>
-                <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare
-                    how
-                    cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added
-                    forth chief trees but rooms think may.</p>
+                <h2>UnOther<span>Feb 2021 - Present</span></h2>
+                <p>
+                    A mobile application where the user can read different books of authors, publishers and genres and
+                    can participate in reading challenges.
+                </p>
+                <h6>
+                    Tech stack - <span>Ionic</span>
+                </h6>
 
             </div>
 
@@ -236,24 +372,14 @@
                     <i class="fas fa-pencil-alt"></i>
                 </span>
                 <div class="timeline-description">
-                    <h2>Front End Developer at Google Company <span>2017-2018</span></h2>
-                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
-                        unorthographic life One day however a small line of blind text by the name of Lorem Ipsum
-                        decided to leave for the far World of Grammar.</p>
-                </div>
-            </div>
-            <div>
-                <div class="timeline-line">
-                </div>
-                <span class="pencil-yellow pencil">
-                    <i class="fas fa-pencil-alt"></i>
-                </span>
-                <div class="timeline-description">
-                    <h2>System Analyst <span>2017-2018</span></h2>
-                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
-                        unorthographic life One day however a small line of blind text by the name of Lorem Ipsum
-                        decided to leave for the far World of Grammar.</p>
-
+                    <h2>OliveGaea<span>Jan 2021 - Feb 2021</span></h2>
+                    <p>
+                        A platform for calculating the number of trees that needs to be planted based on the carbon
+                        emission done by an individual or business.
+                    </p>
+                    <h6>
+                        Tech stack - <span>NextJS</span>
+                    </h6>
                 </div>
             </div>
             <div>
@@ -264,11 +390,33 @@
                 </span>
                 <div class="timeline-description">
 
-                    <h2>Creative Designer <span>2017-2018</span></h2>
-                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
-                        unorthographic life One day however a small line of blind text by the name of Lorem Ipsum
-                        decided to leave for the far World of Grammar.</p>
+                    <h2>UnOther - Admin side<span>Dec 2020 - Jan 2021</span></h2>
+                    <p>
+                        An admin site for the UnOther mobile application through which the admin can add, update and
+                        delete new books, publishers, genres and challenges which will reflect in the UnOther mobile
+                        application.
+                    </p>
+                    <h6>
+                        Tech stack - <span>Angular</span>
+                    </h6>
+                </div>
+            </div>
 
+            <div>
+                <div class="timeline-line">
+                </div>
+                <span class="pencil-yellow pencil">
+                    <i class="fas fa-pencil-alt"></i>
+                </span>
+                <div class="timeline-description">
+                    <h2>OliveGaea - Admin side<span>Nov 2020 - Dec 2020</span></h2>
+                    <p>
+                        An admin side for the OliveGaea platform which records all the individuals as well as businesses
+                        who have planted trees and based on this, they get a certificate for the same.
+                    </p>
+                    <h6>
+                        Tech stack - <span>NextJS</span>
+                    </h6>
                 </div>
             </div>
             <div>
@@ -279,11 +427,13 @@
                 </span>
                 <div class="timeline-description">
 
-                    <h2>UI/UX Designer at Envato <span>2017-2018</span></h2>
-                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
-                        unorthographic life One day however a small line of blind text by the name of Lorem Ipsum
-                        decided to leave for the far World of Grammar.</p>
-
+                    <h2>Arthan careers <span>Oct 2020 - Nov 2020</span></h2>
+                    <p>
+                        A job portal platform where the employees can apply for jobs and the employers can post jobs.
+                    </p>
+                    <h6>
+                        Tech stack - <span>Angular</span>
+                    </h6>
                 </div>
             </div>
             <span class="timeline-end"></span>
@@ -291,12 +441,12 @@
     </section>
 
     <section id="work" style="min-height: 100vh;">
-        <h2 class="text-uppercase about-title">My work</h2>
         <h3 class="text-uppercase who-am-I">Recent work</h3>
         <div class="row mb-5">
             <div class="col-12 col-md-6 col-lg-6 text-center">
                 <div class="card h-100 text-center">
-                    <img src="../../../assets/images/work/Belongg_mobile.png" class="card-img-top" alt="Belongg" style="max-height: 12rem;object-fit: cover;">
+                    <img src="../../../assets/images/work/Belongg_mobile.png" class="card-img-top" alt="Belongg"
+                        style="max-height: 12rem;object-fit: cover;">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
@@ -352,7 +502,7 @@
         </div>
         <div class="contact-section">
             <div class="row no-gutters">
-                <div class="col-12 col-md-4 col-lg-4">
+                <div class="col-12 col-md-4 col-lg-4 mb-5">
                     <div class="card text-center h-100">
                         <i class="far fa-envelope"></i>
                         <div class="card-body">
@@ -361,23 +511,34 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 col-lg-4">
+                <div class="col-12 col-md-4 col-lg-4 mb-5">
                     <div class="card text-center h-100">
                         <i class="fas fa-phone"></i>
                         <div class="card-body">
                             <h5 class="card-title">Phone</h5>
-                            <p class="card-text">7003082686</p>
+                            <p class="card-text phone">7003082686</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 col-lg-4">
+                <div class="col-12 col-md-4 col-lg-4 mb-5">
                     <div class="card text-center h-100">
                         <span>
                             <i class="fas fa-map"></i>
                         </span>
                         <div class="card-body">
-                            <h5 class="card-title">Address</h5>
-                            <p class="card-text">Bengaluru, Karnataka</p>
+                            <h5 class="card-title">Social</h5>
+                            <div class="row">
+                                <div class="col-6 text-end">
+                                    <a href="https://github.com/avinashhumney" target="_blank">
+                                        <i class="fab fa-github fa-2x"></i>
+                                    </a>
+                                </div>
+                                <div class="col-6 text-start">
+                                    <a href="https://www.linkedin.com/in/avinash-humney-4094421b2/" target="_blank">
+                                        <i class="fab fa-linkedin fa-2x"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -385,5 +546,3 @@
         </div>
     </section>
 </div>
-
-dude

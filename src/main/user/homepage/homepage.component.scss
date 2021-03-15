@@ -28,13 +28,12 @@
 
 .designation {
     font-size: 12px;
-    margin-bottom: 2em;
     font-weight: 400;
     font-family: 'Quicksand', sans-serif;
-    padding-bottom: 24px;
 }
 
 .nav-links {
+    padding: 0;
     list-style: none;
     font-family: 'Quicksand', sans-serif;
 
@@ -62,7 +61,15 @@
 
 .main {
     margin-left: 300px;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
+}
+
+// Home
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 // About
@@ -70,6 +77,7 @@
 #about {
     padding:5.4375rem 2.5rem;
     max-width: 2500px;
+    flex-direction: column;
 }
 
 .about-title {
@@ -83,7 +91,6 @@
 
 .who-am-I {
     font-size: 1.125rem;
-    margin-bottom: 4em;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -209,10 +216,10 @@
 
 .progress-bars {
     h3 {
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-family: 'Quicksand', sans-serif;
-        margin-bottom: 10px;
         font-weight: 400;
+        margin-top: 1.8rem;
     }
 }
 
@@ -256,6 +263,7 @@
     span {
         font-size: 16px;
         opacity: .4;
+        margin-left: 0.3125rem;
     }
 
     }
@@ -370,6 +378,11 @@
     font-family: "Quicksand", sans-serif;
 }
 
+.phone {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+}
+
 .home-main {
     padding: 3.25rem;
 }
@@ -383,4 +396,59 @@
 #work {
     padding: 5.4375rem 2.5rem;
     max-width: 1000px;
+}
+
+.intermediate-line {
+    height: 10px;
+    width: 1.5px;
+    background: #000;
+}
+.beginner, .intermediate, .expert {
+    font-size: .9rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.company-logo {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.company {
+    margin: 3rem 0;
+}
+
+.fa-github {
+    color: #000;
+}
+
+@media only screen and (max-width:1000px) {
+    .sidebar {
+        visibility: hidden;
+    }
+    .main {
+        margin-left: 0;
+    }
+    .home-main {
+        padding: 1rem;
+    } 
+    #about {
+        padding: 4rem 1rem;
+    }
+
+    .grid {
+        margin-bottom: 1rem;
+    }
+    #skills {
+        padding: 4rem 1rem;
+    }
+    #experience {
+        padding: 4rem 1rem;
+    }
+    #contact {
+        padding: 4rem 1rem;
+    }
+    .timeline-line::before {
+        height: 21.25rem;
+    }
 }
